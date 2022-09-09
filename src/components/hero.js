@@ -14,7 +14,7 @@ const Hero = () => {
   return (
     <div>
       <div className='grid md:grid-cols-2 gap-8 items-center justify-center'>
-        <div className='w-full after:w-full after:h-full after:bg-blue-500 after:absolute relative md:after:translate-x-20 after:translate-x-3 md:after:translate-y-20 after:translate-y-3 after:-z-10 after:top-0 after:left-0 after:shadow-xl'>
+        <div className='w-full after:w-full after:h-full after:bg-gray-900 after:absolute relative md:after:translate-x-20 after:translate-x-3 md:after:translate-y-20 after:translate-y-3 after:-z-10 after:top-0 after:left-0 after:shadow-xl'>
           <img
             src='https://cdn.pixabay.com/photo/2019/05/30/12/07/emotions-4239774_960_720.jpg'
             alt='hero'
@@ -44,7 +44,7 @@ const Hero = () => {
                     : i === 1
                     ? "bg-red-600"
                     : i === 2
-                    ? "bg-blue-500"
+                    ? "bg-gray-900"
                     : "bg-pink-600"
                 } text-white font-bold w-40 h-40 flex flex-col items-center justify-center p-8`}
               >

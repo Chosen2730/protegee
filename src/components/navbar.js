@@ -38,7 +38,7 @@ const Navbar = () => {
     >
       {/* TOP MENU BAR */}
 
-      <div className='flex justify-between max-w-6xl mx-auto font-bold items-center p-6'>
+      <div className='flex justify-between max-w-6xl mx-auto font-bold items-center px-6 p-4'>
         <div className='flex justify-between md:items-center w-full'>
           <div className='md:flex items-center justify-center gap-4'>
             <img src={logo} className='w-10' alt='logo' />
@@ -52,7 +52,7 @@ const Navbar = () => {
           <i
             className={`${
               navOpen ? "opacity-20" : "opacity-full"
-            } text-2xl md:hidden bg-[#190495] text-white rounded-md w-fit h-fit p-2`}
+            } text-2xl md:hidden bg-gray-900 text-white rounded-md w-fit h-fit p-2`}
             onClick={() => setNavOpen(true)}
           >
             <CgMenuRight />
@@ -87,7 +87,7 @@ const Navbar = () => {
         >
           <div className='w-full flex flex-col'>
             <i
-              className='text-xl md:hidden ml-auto p-2 w-fit flex justify-end flex-col bg-[#190495] text-white rounded-md '
+              className='text-xl md:hidden ml-auto p-2 w-fit flex justify-end flex-col bg-gray-900 text-white rounded-md '
               onClick={() => setNavOpen(false)}
             >
               <CgClose className='' />
