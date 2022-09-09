@@ -34,11 +34,11 @@ const Navbar = () => {
     <div
       className={`${
         scroll ? "fixed w-full bg-white shadow-xl z-10" : ""
-      } p-6 text-gray-800 transition shadow-xl`}
+      }text-gray-800 transition shadow-xl`}
     >
       {/* TOP MENU BAR */}
 
-      <div className='flex justify-between max-w-6xl mx-auto font-bold items-center'>
+      <div className='flex justify-between max-w-6xl mx-auto font-bold items-center p-6'>
         <div className='flex justify-between md:items-center w-full'>
           <div className='md:flex items-center justify-center gap-4'>
             <img src={logo} className='w-10' alt='logo' />
