@@ -21,7 +21,7 @@ const Hero = () => {
           />
         </div>
         <div className='md:pl-16 mt-20 md:block md:mt-0 flex flex-col text-center justify-center items-center'>
-          <h2 className='font-bold text-blue-500 capitalize text-xl md:text-2xl'>
+          <h2 className='font-bold text-pink-600 capitalize text-xl md:text-2xl'>
             We make learning interesting through creativity
           </h2>
           <h1 className='font-extrabold mt-5 text-[#190495] capitalize text-3xl  md:text-4xl'>
