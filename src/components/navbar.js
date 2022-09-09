@@ -34,7 +34,7 @@ const Navbar = () => {
     <div
       className={`${
         scroll ? "fixed w-full bg-white shadow-xl z-10" : ""
-      }text-gray-800 transition shadow-xl`}
+      }text-gray-800 transition `}
     >
       {/* TOP MENU BAR */}
 
@@ -95,7 +95,7 @@ const Navbar = () => {
             <div className='flex flex-col items-center justify-center gap-4'>
               <img src={logo} className='w-24' alt='logo' />
               <Link
-                className={`text-2xl md:text-3xl font-extrabold text-[#190495] transition`}
+                className={`text-2xl md:text-3xl font-extrabold text-[#190495] transition text-center`}
                 to='/'
               >
                 Protegee Faith Academy

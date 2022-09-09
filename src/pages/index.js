@@ -3,7 +3,7 @@ import Hero from "../components/hero";
 
 const Home = () => {
   return (
-    <div className='max-w-6xl mx-auto p-6'>
+    <div className='max-w-6xl mx-auto p-6 overflow-hidden'>
       <Hero />
     </div>
   );
