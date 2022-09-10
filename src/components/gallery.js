@@ -30,7 +30,10 @@ const Gallery = () => {
   const image2 = images[index + 1];
   const image3 = images[index + 2];
   return (
-    <div className='flex flex-col items-center justify-center p-4 md:p-12 my-20'>
+    <div
+      id='gallery'
+      className='flex flex-col items-center justify-center p-4 md:p-12 my-20'
+    >
       <h3 className='font-extrabold text-3xl md:text-4xl text-gray-900'>
         Our gallery
       </h3>

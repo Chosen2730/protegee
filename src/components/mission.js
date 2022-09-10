@@ -2,7 +2,7 @@ import React from "react";
 
 const Mission = () => {
   return (
-    <div className='my-24 bg-gray-900 rounded-xl md:px-12 py-24 px-8 flex flex-col items-center justify-center text-center text-white'>
+    <div className='my-24 -m-8 p-8 bg-gray-900 md:px-12 py-24 px-8 flex flex-col items-center justify-center text-center text-white'>
       <h1 className='text-3xl md:text-4xl font-bold'>Our Mission</h1>
       <p className='text-sm my-4'>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa non

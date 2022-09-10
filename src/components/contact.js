@@ -4,7 +4,7 @@ import Form from "./form";
 
 const Contact = () => {
   return (
-    <div className='rounded-xl shadow-xl p-4 md:p-12 py-12  my-20'>
+    <div id='contact' className='rounded-xl shadow-xl p-4 md:p-12 py-12  my-20'>
       <h2 className='font-extrabold text-3xl lg:text-4xl uppercase text-center my-3'>
         Admission/Contact Form
       </h2>

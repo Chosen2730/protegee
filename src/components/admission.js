@@ -3,7 +3,7 @@ import ad from "../images/admission2.png";
 
 const Admission = () => {
   return (
-    <div className='rounded-xl shadow-xl p-4 md:p-12 py-12 bg-gray-900 my-20'>
+    <div id='admissions' className='-m-8 p-8 md:p-12 py-12 bg-gray-900 my-20'>
       <div className='grid md:grid-cols-2 md:gap-8 items-center justify-center'>
         <img src={ad} className='w-full' alt='about-img' />
         <div>

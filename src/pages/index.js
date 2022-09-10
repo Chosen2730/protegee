@@ -9,6 +9,7 @@ import Testimonial from "../components/testimonials";
 import Contact from "../components/contact";
 import Enrol from "../components/enrol";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { TbArrowTopCircle } from "react-icons/tb";
 
 const Home = () => {
   return (
@@ -43,6 +44,11 @@ const Home = () => {
       <AnimationOnScroll animateIn='animate__fadeInUpBig'>
         <Enrol />
       </AnimationOnScroll>
+      <a href='#nav'>
+        <i className='flex fixed bottom-20 right-10 items-center justify-center rounded-full bg-yellow-500 text-black'>
+          <TbArrowTopCircle className='w-10 h-10 p-3' />
+        </i>
+      </a>
     </div>
   );
 };

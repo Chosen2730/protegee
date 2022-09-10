@@ -6,11 +6,11 @@ import { BsInstagram, BsWhatsapp, BsTwitter } from "react-icons/bs";
 import { MdCall } from "react-icons/md";
 
 const navItems = [
-  { title: "Home", url: "/" },
-  { title: "About Us", url: "/about" },
-  { title: "Admissions", url: "/service" },
-  { title: "Gallery", url: "/portfolio" },
-  { title: "Contact Us", url: "/contact" },
+  { title: "Home", url: "#" },
+  { title: "About Us", url: "#about" },
+  { title: "Admissions", url: "#admissions" },
+  { title: "Gallery", url: "#gallery" },
+  { title: "Contact Us", url: "#contact" },
 ];
 
 const Navbar = () => {
@@ -25,30 +25,19 @@ const Navbar = () => {
     },
     { logo: "/images/download.png", url: "tel:08034408730" },
     {
-      logo: "/images/instgram.png",
+      logo: "/images/ig.png",
       url: "https://www.instagram.com/protegeefaith/",
     },
     { logo: "/images/email.png", url: "mailto:Protegeefaithacad@gmail.com" },
-    { logo: "/images/whatsApp.png", url: "https://wa.me/09166166949" },
+    { logo: "/images/wh.png", url: "https://wa.me/09166166949" },
   ];
-
-  useEffect(() => {
-    const event = () => {
-      if (window.scrollY > 300) {
-        setScroll(true);
-      } else {
-        setScroll(false);
-      }
-    };
-    window.addEventListener("scroll", event);
-    return () => window.removeEventListener("scroll", event);
-  }, []);
 
   return (
     <div
+      id='nav'
       className={`${
         scroll ? "fixed w-full bg-white shadow-xl " : ""
-      }text-gray-800 transition z-50`}
+      }text-gray-800 transition z-50 shadow-xl`}
     >
       {/* TOP MENU BAR */}
 
@@ -76,18 +65,18 @@ const Navbar = () => {
         <div className='md:flex gap-10 hidden'>
           {navItems.map(({ title, url }, i) => {
             return (
-              <Link
+              <a
                 key={i}
                 className={`${
                   i === base
                     ? "text-blue-700 border-b-2 border-b-blue-700"
                     : "text-gray-800"
                 } text-sm hover:text-violet-700 transition whitespace-nowrap`}
-                to={url}
+                href={url}
                 onClick={() => setBase(i)}
               >
                 {title}
-              </Link>
+              </a>
             );
           })}
         </div>
@@ -127,21 +116,21 @@ const Navbar = () => {
           </div>
           {navItems.map(({ title, url }, i) => {
             return (
-              <Link
+              <a
                 key={i}
                 className={`${
                   i === base
                     ? "text-blue-700 border-b-2 border-b-blue-700 w-fit"
                     : "text-gray-800"
                 } block my-10 py-2 text-sm transition`}
-                to={url}
+                href={url}
                 onClick={() => {
                   setBase(i);
                   setNavOpen(false);
                 }}
               >
                 {title}
-              </Link>
+              </a>
             );
           })}
         </div>
