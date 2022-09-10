@@ -25,6 +25,10 @@ const Gallery = () => {
       return newIndex;
     });
   };
+
+  const image1 = images[index];
+  const image2 = images[index + 1];
+  const image3 = images[index + 2];
   return (
     <div className='flex flex-col items-center justify-center p-4 md:p-12 my-20'>
       <h3 className='font-extrabold text-3xl md:text-4xl text-gray-900'>
@@ -37,17 +41,35 @@ const Gallery = () => {
         >
           <MdOutlineArrowBackIos className='w-10 h-10 p-3' />
         </i>
-        <div className='grid grid-cols-3 gap-4'>
-          {images.slice(index, index + 3).map((image, i) => {
-            return (
+
+        <div className='grid md:grid-cols-3 gap-4 my-4'>
+          {image1 && (
+            <div>
               <img
-                src={image}
-                key={i}
-                className={`w-full h-full object-cover shadow-xl`}
-                alt='gallery'
+                src={image1}
+                className='w-full h-full object-cover'
+                alt='event-img'
               />
-            );
-          })}
+            </div>
+          )}
+          {image2 && (
+            <div className='hidden md:block'>
+              <img
+                src={image2}
+                className='w-full h-full object-cover'
+                alt='event-img'
+              />
+            </div>
+          )}
+          {image3 && (
+            <div className='hidden md:block'>
+              <img
+                src={image3}
+                className='w-full h-full object-cover'
+                alt='event-img'
+              />
+            </div>
+          )}
         </div>
         <i
           className='flex items-center justify-center rounded-full bg-yellow-500 text-white'
@@ -56,9 +78,9 @@ const Gallery = () => {
           <MdOutlineArrowForwardIos className='w-10 h-10 p-3' />
         </i>
       </div>
-      <button className='bg-blue-700 p-4 px-8 rounded-xl text-gray-50 font-bold hover:bg-blue-500 transition hover:scale-95 text-sm my-5'>
+      {/* <button className='bg-blue-700 p-4 px-8 rounded-xl text-gray-50 font-bold hover:bg-blue-500 transition hover:scale-95 text-sm my-5'>
         See More
-      </button>
+      </button> */}
     </div>
   );
 };

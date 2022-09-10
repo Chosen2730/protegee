@@ -18,6 +18,20 @@ const Navbar = () => {
   const [base, setBase] = useState(0);
   const [scroll, setScroll] = useState(false);
 
+  const medias = [
+    {
+      logo: "/images/fb.png",
+      url: "https://web.facebook.com/profile.php?id=100083690862278",
+    },
+    { logo: "/images/download.png", url: "tel:08034408730" },
+    {
+      logo: "/images/instgram.png",
+      url: "https://www.instagram.com/protegeefaith/",
+    },
+    { logo: "/images/email.png", url: "mailto:Protegeefaithacad@gmail.com" },
+    { logo: "/images/whatsApp.png", url: "https://wa.me/09166166949" },
+  ];
+
   useEffect(() => {
     const event = () => {
       if (window.scrollY > 300) {
@@ -101,22 +115,14 @@ const Navbar = () => {
                 Protegee Faith Academy
               </Link>
             </div>
-            <div className='flex justify-center gap-8 my-4'>
-              <a href=''>
-                <CgFacebook />
-              </a>
-              <a href=''>
-                <BsTwitter />
-              </a>
-              <a href=''>
-                <BsWhatsapp />
-              </a>
-              <a href=''>
-                <BsInstagram />
-              </a>
-              <a href=''>
-                <MdCall />
-              </a>
+            <div className='flex justify-center gap-4 my-4'>
+              {medias.map(({ logo, url }, i) => {
+                return (
+                  <a href={url} target='_blank' key={i}>
+                    <img src={logo} className='w-8' alt='logo' key={i} />
+                  </a>
+                );
+              })}
             </div>
           </div>
           {navItems.map(({ title, url }, i) => {

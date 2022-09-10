@@ -4,7 +4,23 @@ import { useForm, ValidationError } from "@formspree/react";
 const Form = () => {
   const [state, handleSubmit] = useForm("mnqrnrkp");
   if (state.succeeded) {
-    return <p>Thanks for joining!</p>;
+    return (
+      <div className='my-5'>
+        <h2 className='font-extrabold text-2xl text-pink-600'>
+          Submission successful!
+        </h2>
+        <p>
+          Your form has been submitted and you will get a response from us soon.{" "}
+          <a
+            className='text-blue-700 font-bold'
+            href='https://wa.me/09166166949'
+          >
+            Chat us on WhatsApp
+          </a>{" "}
+          for immediate respone.
+        </p>
+      </div>
+    );
   }
   return (
     <form onSubmit={handleSubmit} className='text-gray-900'>
@@ -45,11 +61,10 @@ const Form = () => {
         name='class'
       />
       <ValidationError prefix='Email' field='email' errors={state.errors} />
-      <textarea id='message' name='message' />
-      <ValidationError prefix='Message' field='message' errors={state.errors} />
+
       <button
         type='submit'
-        className='bg-blue-700 p-4 px-8 rounded-xl text-gray-50 font-bold hover:bg-blue-500 transition hover:scale-95 text-sm'
+        className='bg-blue-700 p-4 px-8 rounded-xl text-gray-50 font-bold hover:bg-blue-500 transition hover:scale-95 text-sm my-5'
         disabled={state.submitting}
       >
         Submit
