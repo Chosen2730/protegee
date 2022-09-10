@@ -38,12 +38,12 @@ const Navbar = () => {
     >
       {/* TOP MENU BAR */}
 
-      <div className='flex justify-between max-w-6xl mx-auto font-bold items-center px-6 p-4'>
+      <div className='flex justify-between max-w-7xl mx-auto font-bold items-center px-6 p-4'>
         <div className='flex justify-between md:items-center w-full'>
           <div className='md:flex items-center justify-center gap-4'>
             <img src={logo} className='w-10' alt='logo' />
             <Link
-              className={`text-xl md:text-3xl font-extrabold text-[#190495] transition md:block w-52 md:w-full hidden`}
+              className={`text-xl md:text-3xl font-extrabold text-blue-700 transition md:block w-52 md:w-full hidden`}
               to='/'
             >
               Protegee Faith Academy
@@ -66,7 +66,7 @@ const Navbar = () => {
                 key={i}
                 className={`${
                   i === base
-                    ? "text-[#190495] border-b-2 border-b-[#190495]"
+                    ? "text-blue-700 border-b-2 border-b-blue-700"
                     : "text-gray-800"
                 } text-sm hover:text-violet-700 transition whitespace-nowrap`}
                 to={url}
@@ -95,7 +95,7 @@ const Navbar = () => {
             <div className='flex flex-col items-center justify-center gap-4'>
               <img src={logo} className='w-24' alt='logo' />
               <Link
-                className={`text-2xl md:text-3xl font-extrabold text-[#190495] transition text-center`}
+                className={`text-2xl md:text-3xl font-extrabold text-blue-700 transition text-center`}
                 to='/'
               >
                 Protegee Faith Academy
@@ -125,7 +125,7 @@ const Navbar = () => {
                 key={i}
                 className={`${
                   i === base
-                    ? "text-[#190495] border-b-2 border-b-[#190495] w-fit"
+                    ? "text-blue-700 border-b-2 border-b-blue-700 w-fit"
                     : "text-gray-800"
                 } block my-10 py-2 text-sm transition`}
                 to={url}

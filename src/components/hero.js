@@ -24,7 +24,7 @@ const Hero = () => {
           <h2 className='font-bold text-pink-600 capitalize text-xl md:text-2xl'>
             We make learning interesting through creativity
           </h2>
-          <h1 className='font-extrabold mt-5 text-[#190495] capitalize text-3xl  md:text-4xl'>
+          <h1 className='font-extrabold mt-5 text-blue-700 capitalize text-3xl  md:text-4xl'>
             Protegee Faith Academy
           </h1>
           <p className='font-bold text-blue-500 capitalize text-lg mb-10 sm:mb-0'>
