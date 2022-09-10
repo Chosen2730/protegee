@@ -29,7 +29,7 @@ const Navbar = () => {
       url: "https://www.instagram.com/protegeefaith/",
     },
     { logo: "/images/email.png", url: "mailto:Protegeefaithacad@gmail.com" },
-    { logo: "/images/wh.png", url: "https://wa.me/09166166949" },
+    { logo: "/images/wh.png", url: "https://wa.me/+2349166166949" },
   ];
 
   return (

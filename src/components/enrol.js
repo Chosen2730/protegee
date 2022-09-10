@@ -22,7 +22,7 @@ const Enrol = () => {
           <a href='mailto:Protegeefaithacad@gmail.com' target='_blank'>
             <MdOutlineMailOutline />
           </a>
-          <a href='https://wa.me/09166166949'>
+          <a href='https://wa.me/+2349166166949'>
             <BsWhatsapp />
           </a>
           <a href='https://www.instagram.com/protegeefaith/' target='_blank'>

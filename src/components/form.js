@@ -13,7 +13,7 @@ const Form = () => {
           Your form has been submitted and you will get a response from us soon.{" "}
           <a
             className='text-blue-700 font-bold'
-            href='https://wa.me/09166166949'
+            href='https://wa.me/+2349166166949'
           >
             Chat us on WhatsApp
           </a>{" "}
