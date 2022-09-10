@@ -41,7 +41,7 @@ const Navbar = () => {
     >
       {/* TOP MENU BAR */}
 
-      <div className='flex justify-between max-w-7xl mx-auto font-bold items-center px-6 p-4'>
+      <div className='flex justify-between max-w-[1440px] mx-auto font-bold items-center px-6 p-4'>
         <div className='flex justify-between md:items-center w-full'>
           <div className='md:flex items-center justify-center gap-4'>
             <img src={logo} className='w-10' alt='logo' />

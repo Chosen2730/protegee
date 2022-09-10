@@ -13,7 +13,7 @@ import { TbArrowTopCircle } from "react-icons/tb";
 
 const Home = () => {
   return (
-    <div className='max-w-7xl mx-auto p-6 overflow-hidden'>
+    <div className='max-w-[1440px] mx-auto p-6 overflow-hidden'>
       <AnimationOnScroll
         animateIn='animate__backInRight'
         initiallyVisible={true}
