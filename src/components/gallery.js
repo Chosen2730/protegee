@@ -26,7 +26,7 @@ const Gallery = () => {
     });
   };
   return (
-    <div className='flex flex-col items-center justify-center p-4 md:p-12'>
+    <div className='flex flex-col items-center justify-center p-4 md:p-12 my-20'>
       <h3 className='font-extrabold text-3xl md:text-4xl text-gray-900'>
         Our gallery
       </h3>
@@ -43,7 +43,7 @@ const Gallery = () => {
               <img
                 src={image}
                 key={i}
-                className='w-full h-full object-cover shadow-xl'
+                className={`w-full h-full object-cover shadow-xl`}
                 alt='gallery'
               />
             );

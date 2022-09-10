@@ -5,6 +5,9 @@ import Mission from "../components/mission";
 import Admission from "../components/admission";
 import Why from "../components/why";
 import Gallery from "../components/gallery";
+import Testimonial from "../components/testimonials";
+import Contact from "../components/contact";
+import Enrol from "../components/enrol";
 
 const Home = () => {
   return (
@@ -12,9 +15,12 @@ const Home = () => {
       <Hero />
       <Mission />
       <About />
-      <Admission />
       <Why />
+      <Admission />
       <Gallery />
+      <Testimonial />
+      <Contact />
+      <Enrol />
     </div>
   );
 };

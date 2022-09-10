@@ -54,11 +54,7 @@ const Why = () => {
             <h2 className='font-bold text-lg'>Table/Floor Toys</h2>
           </div>
         </div>
-        <button className='bg-blue-700 p-4 px-8 rounded-xl text-gray-50 font-bold my-4 hover:bg-blue-500 transition hover:scale-95 text-sm'>
-          Enrol Now
-        </button>
       </div>
-      {/* <img src={ad} className='w-[50%]' alt='about-img' /> */}
     </div>
   );
 };

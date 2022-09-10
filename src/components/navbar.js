@@ -33,8 +33,8 @@ const Navbar = () => {
   return (
     <div
       className={`${
-        scroll ? "fixed w-full bg-white shadow-xl z-10" : ""
-      }text-gray-800 transition `}
+        scroll ? "fixed w-full bg-white shadow-xl " : ""
+      }text-gray-800 transition z-50`}
     >
       {/* TOP MENU BAR */}
 
@@ -83,7 +83,7 @@ const Navbar = () => {
         <div
           className={`${
             navOpen ? "translate-x-0" : "-translate-x-full"
-          } transition fixed md:-translate-x-full top-0 z-10 left-0 p-6 bg-white shadow-xl h-screen w-[80%]`}
+          } transition fixed md:-translate-x-full top-0 z-50 left-0 p-6 bg-white shadow-xl h-screen w-[80%]`}
         >
           <div className='w-full flex flex-col'>
             <i
