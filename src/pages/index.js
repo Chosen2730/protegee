@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import About from "../components/about";
 import Hero from "../components/hero";
 import Mission from "../components/mission";
@@ -12,6 +12,20 @@ import { AnimationOnScroll } from "react-animation-on-scroll";
 import { TbArrowTopCircle } from "react-icons/tb";
 
 const Home = () => {
+  const [icon, setIcon] = useState(false);
+
+  useEffect(() => {
+    const action = () => {
+      if (window.scrollY > 500) {
+        setIcon(true);
+      } else {
+        setIcon(false);
+      }
+    };
+    window.addEventListener("scroll", action);
+    return () => window.removeEventListener("scroll", action);
+  }, []);
+
   return (
     <div className='max-w-[1440px] mx-auto p-6 overflow-hidden'>
       <AnimationOnScroll
@@ -44,9 +58,14 @@ const Home = () => {
       <AnimationOnScroll animateIn='animate__fadeInUpBig'>
         <Enrol />
       </AnimationOnScroll>
+
       <a href='#nav'>
-        <i className='flex fixed bottom-20 right-10 items-center justify-center rounded-full bg-yellow-500 text-black'>
-          <TbArrowTopCircle className='w-10 h-10 p-3' />
+        <i
+          className={`${
+            icon ? "flex" : "hidden"
+          }  fixed bottom-20 right-10 items-center justify-center rounded-full bg-yellow-500 text-black`}
+        >
+          <TbArrowTopCircle className='w-16 h-16 p-3' />
         </i>
       </a>
     </div>
