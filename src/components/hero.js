@@ -23,7 +23,7 @@ const Hero = () => {
             We make learning interesting through creativity
           </h2>
           <h1 className='font-extrabold mt-5 text-blue-700 capitalize text-4xl  md:text-7xl'>
-            Protegee Faith Academy
+            Protégée Faith Academy
           </h1>
           <p className='font-bold text-blue-500 capitalize text-lg mb-10 sm:mb-0'>
             Discover | Learn | Play

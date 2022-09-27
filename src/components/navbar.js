@@ -101,7 +101,7 @@ const Navbar = () => {
                 className={`text-2xl md:text-3xl font-extrabold text-blue-700 transition text-center`}
                 to='/'
               >
-                Protegee Faith Academy
+                Protégée Faith Academy
               </Link>
             </div>
             <div className='flex justify-center gap-4 my-4'>
