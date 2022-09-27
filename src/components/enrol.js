@@ -33,8 +33,10 @@ const Enrol = () => {
           </a>
         </div>
         <div className='my-10'>
-          <h3>+234 810 411 3670</h3>
-          <h2 className='text-yellow-500'>Jericho, Onireke GRA, Ibadan.</h2>
+          <h3>+234 810 411 3670; +234 803 440 8730</h3>
+          <h2 className='text-yellow-500'>
+            1, Faith Drive, Off Kudeti Avenue, Onireke GRA, Ibadan.
+          </h2>
         </div>
       </div>
       <p className='text-white text-sm'>

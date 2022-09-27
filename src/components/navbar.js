@@ -49,7 +49,7 @@ const Navbar = () => {
               className={`text-xl md:text-3xl font-extrabold text-blue-700 transition md:block w-52 md:w-full hidden`}
               to='/'
             >
-              Protegee Faith Academy
+              PFA
             </Link>
           </div>
           <i

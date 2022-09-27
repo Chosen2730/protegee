@@ -1,9 +1,11 @@
 import React from "react";
+import logo from "../images/logo.png";
 
 const About = () => {
   return (
     <div id='about' className='rounded-xl shadow-xl p-4 md:p-12 py-12'>
       <div className='grid md:grid-cols-2 gap-8 items-center justify-center'>
+        <img src={logo} alt='about-img' className='w-1/2 mx-auto' />
         <div>
           <h2 className='text-blue-700 font-bold text-2xl md:text-4xl'>
             About Us
@@ -20,10 +22,6 @@ const About = () => {
             Discover More
           </button>
         </div>
-        <img
-          src='https://cdn.pixabay.com/photo/2014/03/12/18/45/boys-286245_960_720.jpg'
-          alt='about-img'
-        />
       </div>
     </div>
   );

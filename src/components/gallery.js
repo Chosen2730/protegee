@@ -37,14 +37,23 @@ const Gallery = () => {
       <h3 className='font-extrabold text-3xl md:text-4xl text-gray-900'>
         Our gallery
       </h3>
-      <div className='flex items-center justify-center gap-8'>
+      <div className='flex gap-4'>
+        {" "}
         <i
           className='flex items-center justify-center rounded-full bg-pink-700 text-white'
           onClick={prev}
         >
           <MdOutlineArrowBackIos className='w-10 h-10 p-3' />
         </i>
+        <i
+          className='flex items-center justify-center rounded-full bg-yellow-500 text-white'
+          onClick={next}
+        >
+          <MdOutlineArrowForwardIos className='w-10 h-10 p-3' />
+        </i>
+      </div>
 
+      <div className='flex items-center justify-center gap-8'>
         <div className='grid md:grid-cols-3 gap-4 my-4'>
           {image1 && (
             <div>
@@ -74,16 +83,7 @@ const Gallery = () => {
             </div>
           )}
         </div>
-        <i
-          className='flex items-center justify-center rounded-full bg-yellow-500 text-white'
-          onClick={next}
-        >
-          <MdOutlineArrowForwardIos className='w-10 h-10 p-3' />
-        </i>
       </div>
-      {/* <button className='bg-blue-700 p-4 px-8 rounded-xl text-gray-50 font-bold hover:bg-blue-500 transition hover:scale-95 text-sm my-5'>
-        See More
-      </button> */}
     </div>
   );
 };

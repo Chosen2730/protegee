@@ -3,6 +3,7 @@ import brain from "../images/brain.png";
 import create from "../images/create.png";
 import star from "../images/star.png";
 import trophy from "../images/trophy.png";
+import hero from "../images/22.jpg";
 
 const Hero = () => {
   const images = [
@@ -15,16 +16,13 @@ const Hero = () => {
     <div>
       <div className='grid md:grid-cols-2 gap-8 items-center justify-center'>
         <div className='w-full after:w-full after:h-full after:bg-gray-900 after:absolute relative md:after:translate-x-20 after:translate-x-3 md:after:translate-y-20 after:translate-y-3 after:-z-10 after:top-0 after:left-0 after:shadow-xl'>
-          <img
-            src='https://cdn.pixabay.com/photo/2019/05/30/12/07/emotions-4239774_960_720.jpg'
-            alt='hero'
-          />
+          <img src={hero} alt='hero' />
         </div>
         <div className='md:pl-16 mt-20 md:block md:mt-0 flex flex-col text-center justify-center items-center'>
           <h2 className='font-bold text-pink-600 capitalize text-xl md:text-2xl'>
             We make learning interesting through creativity
           </h2>
-          <h1 className='font-extrabold mt-5 text-blue-700 capitalize text-3xl  md:text-4xl'>
+          <h1 className='font-extrabold mt-5 text-blue-700 capitalize text-4xl  md:text-7xl'>
             Protegee Faith Academy
           </h1>
           <p className='font-bold text-blue-500 capitalize text-lg mb-10 sm:mb-0'>

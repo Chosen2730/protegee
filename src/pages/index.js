@@ -28,33 +28,28 @@ const Home = () => {
 
   return (
     <div className='max-w-[1440px] mx-auto p-6 overflow-hidden'>
-      <AnimationOnScroll
-        animateIn='animate__backInRight'
-        initiallyVisible={true}
-      >
-        <Hero />
-      </AnimationOnScroll>
+      <Hero />
       <AnimationOnScroll animateIn='animate__backInLeft'>
         <Mission />
       </AnimationOnScroll>
-      <AnimationOnScroll animateIn='animate__fadeInUp'>
-        <About />
-      </AnimationOnScroll>
+
+      <About />
+
       <AnimationOnScroll animateIn='animate__zoomIn'>
         <Why />
       </AnimationOnScroll>
-      <AnimationOnScroll animateIn='animate__rotateInDownRight'>
-        <Admission />
-      </AnimationOnScroll>
+
+      <Admission />
+
       <AnimationOnScroll animateIn='animate__zoomIn'>
         <Gallery />
       </AnimationOnScroll>
       <AnimationOnScroll animateIn='animate__bounceInRight'>
         <Testimonial />
       </AnimationOnScroll>
-      <AnimationOnScroll animateIn='animate__bounceInLeft'>
-        <Contact />
-      </AnimationOnScroll>
+
+      <Contact />
+
       <AnimationOnScroll animateIn='animate__fadeInUpBig'>
         <Enrol />
       </AnimationOnScroll>
