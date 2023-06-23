@@ -64,7 +64,7 @@ const Form = () => {
 
       <button
         type='submit'
-        className='bg-blue-700 p-4 px-8 rounded-xl text-gray-50 font-bold hover:bg-blue-500 transition hover:scale-95 text-sm my-5'
+        className='bg-blue-700 p-4 px-12 rounded-xl text-gray-50 font-bold hover:bg-blue-500 transition hover:scale-95 text-sm my-5'
         disabled={state.submitting}
       >
         Submit

@@ -4,12 +4,12 @@ import Hero from "../components/hero";
 import Mission from "../components/mission";
 import Admission from "../components/admission";
 import Why from "../components/why";
-import Gallery from "../components/gallery";
 import Testimonial from "../components/testimonials";
 import Contact from "../components/contact";
 import Enrol from "../components/enrol";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import { TbArrowTopCircle } from "react-icons/tb";
+import Slider from "../components/gallerySlider";
 
 const Home = () => {
   const [icon, setIcon] = useState(false);
@@ -41,9 +41,10 @@ const Home = () => {
 
       <Admission />
 
-      <AnimationOnScroll animateIn='animate__zoomIn'>
-        <Gallery />
-      </AnimationOnScroll>
+      {/* <AnimationOnScroll animateIn='animate__zoomIn'> */}
+
+      <Slider />
+      {/* </AnimationOnScroll> */}
       <AnimationOnScroll animateIn='animate__bounceInRight'>
         <Testimonial />
       </AnimationOnScroll>

@@ -12,16 +12,19 @@ import {
 const Why = () => {
   return (
     <div className='rounded-xl shadow-xl p-5 md:px-12 py-24 bg-yellow-500 my-20 text-gray-900'>
-      <div className='flex flex-col items-center justify-center text-center max-w-2xl mx-auto'>
+      <div className='flex flex-col items-center justify-center text-center max-w-6xl mx-auto'>
         <h2 className='font-extrabold text-3xl md:text-5xl'>
           Why you should enrol your wards with us.
         </h2>
 
         <p className='text-sm my-4'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa non
-          dolores doloribus exercitationem neque architecto fugit. Lorem, ipsum
-          dolor sit amet consectetur adipisicing elit. Enim dolor quia, facilis
-          quam numquam aliquam blanditiis ipsa ab perferendis similique.
+          We run the British - Nigerian Curriculum, teach French Language as the
+          second official language, expose learners to speech Elocution
+          training, practical computer classes involving coding and decoding
+          classes, practical approach to Music which involves learning of
+          various instruments like Keyboard, Violin, Saxophone, drumset and
+          Trumpet all within our serene facilities with excellent outlook and
+          ambience.
         </p>
 
         <div className='grid grid-cols-2 md:grid-cols-3 gap-8 text-left'>
