@@ -21,7 +21,8 @@ const Admission = () => {
             Come! Enrol your child today @ Protegee Faith Academy, located at
             ,1, Faith Drive, Off Kudeti Avenue, Onireke GRA, Ibadan for the
             incoming 2022/2023 session. Admissions are open to Creche for child
-            minding & daycare, Pre School, Kindergarten, Primary, After School
+            minding & daycare, Pre School, Kindergarten, Primary, After School.
+            School bus is available to pick our pupils to and fro.
           </p>
           <a
             href='https://wa.me/+2349166166949'
