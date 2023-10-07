@@ -5,6 +5,7 @@ import {
   MdOutlineArrowForwardIos,
   MdOutlineArrowBackIos,
 } from "react-icons/md";
+import apostle from "../images/apostle.jpeg";
 
 const Testimonial = () => {
   const [value, setValue] = useState(0);
@@ -69,6 +70,16 @@ const Testimonial = () => {
               </div>
             );
           })}
+      </div>
+      <div className='flex flex-col items-center justify-center'>
+        <img
+          className='w-96 h-96 border-8 rounded-full object-cover'
+          src={apostle}
+          alt='image'
+        />
+        <h2 className='font-bold text-2xl my-2'>
+          Apostle Sunday Ayokunle Popoola
+        </h2>
       </div>
     </div>
   );
